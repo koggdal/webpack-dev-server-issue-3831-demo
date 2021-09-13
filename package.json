@@ -5,12 +5,17 @@
   "repository": "https://github.com/koggdal/webpack-dev-server-issue-3831-demo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start-webpack": "webpack-dev-server --config ./webpack/entry.config.js --mode development --color",
+    "start-site": "serve -p 8086 public",
+    "start": "concurrently 'npm run start-webpack' 'npm run start-site'"
   },
   "author": "Johannes Koggdal",
   "license": "ISC",
   "devDependencies": {
+    "concurrently": "^6.2.1",
+    "serve": "^12.0.1",
     "webpack": "^5.52.1",
+    "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.2.0"
   }
 }
