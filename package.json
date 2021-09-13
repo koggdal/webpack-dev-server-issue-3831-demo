@@ -1,0 +1,12 @@
+{
+  "name": "webpack-dev-server-issue-3831-demo",
+  "version": "1.0.0",
+  "description": "Demo app",
+  "repository": "https://github.com/koggdal/webpack-dev-server-issue-3831-demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Johannes Koggdal",
+  "license": "ISC"
+}
